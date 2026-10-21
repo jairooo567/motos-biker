@@ -1,0 +1,666 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+	
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MotoSport | Historia de las Superbikes</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: white;
+    line-height: 1.7;
+}
+
+header {
+    background: #080808;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #e50914;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+.hero {
+    min-height: 480px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(ellipse at 80% 40%, #491116, transparent 50%),
+        linear-gradient(120deg, #050505, #1e1e1e);
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.12;
+    margin-bottom: 20px;
+}
+
+.rojo {
+    color: #e50914;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 22px;
+    background: #e50914;
+    padding: 12px 23px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #a80009;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+    color: #ccc;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.tarjeta {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform .25s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.imagen {
+    width: 100%;
+    height: 225px;
+    display: block;
+    background: #181818;
+}
+
+.contenido {
+    padding: 22px;
+}
+
+.contenido h3 {
+    color: #ff303b;
+    margin-bottom: 10px;
+}
+
+.contenido p {
+    color: #ccc;
+    font-size: 15px;
+}
+
+.fondo {
+    background: #191919;
+}
+
+.epoca {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 4px 0 20px 22px;
+    border-left: 3px solid #e50914;
+}
+
+.epoca h3 {
+    color: #ff303b;
+}
+
+.enlace {
+    display: inline-block;
+    color: #ff505a;
+    margin-top: 12px;
+}
+
+.enlace:hover {
+    color: white;
+}
+
+.marcas {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.marca {
+    padding: 24px 10px;
+    background: #252525;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 3px solid #e50914;
+}
+
+.cierre {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #ddd;
+}
+
+footer {
+    padding: 25px;
+    background: #050505;
+    border-top: 2px solid #e50914;
+    text-align: center;
+    color: #aaa;
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MOTO<span style="color:white">SPORT</span></div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#evolucion">Evolución</a>
+        <a href="#modelos">Modelos</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#fuentes">Fuentes</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <h1>HISTORIA DE LAS
+            <span class="rojo">SUPERBIKES</span>
+        </h1>
+
+        <p>
+            Un recorrido por las motocicletas deportivas
+            de alta cilindrada, desde los primeros modelos
+            de altas prestaciones hasta las máquinas
+            modernas inspiradas en la competición.
+        </p>
+
+        <a href="#historia" class="boton">
+            DESCUBRIR LA HISTORIA
+        </a>
+    </div>
+</section>
+
+<section id="historia">
+    <h2 class="titulo">
+        El nacimiento de las <span class="rojo">superbikes</span>
+    </h2>
+
+    <p class="intro">
+        Las motos deportivas de alta cilindrada combinan
+        potencia, aerodinámica, estabilidad e ingeniería.
+        Su historia está vinculada con las carreras,
+        la innovación mecánica y la evolución del transporte.
+    </p>
+
+    <div class="tarjetas">
+
+        <article class="tarjeta">
+
+            <!-- ILUSTRACIÓN SVG INTEGRADA -->
+            <svg class="imagen" viewBox="0 0 500 260"
+                 xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Ilustración de una moto clásica">
+                <defs>
+                    <linearGradient id="fondo1" x2="0" y2="1">
+                        <stop stop-color="#393939"/>
+                        <stop offset="1" stop-color="#101010"/>
+                    </linearGradient>
+                </defs>
+                <rect width="500" height="260" fill="url(#fondo1)"/>
+                <circle cx="140" cy="185" r="48" fill="#090909" stroke="#aaa" stroke-width="5"/>
+                <circle cx="140" cy="185" r="10" fill="#aaa"/>
+                <circle cx="350" cy="185" r="48" fill="#090909" stroke="#aaa" stroke-width="5"/>
+                <circle cx="350" cy="185" r="10" fill="#aaa"/>
+                <path d="M140 185 L205 130 L270 185 L140 185 M205 130 L300 125 L350 185 M270 185 L300 125"
+                      fill="none" stroke="#d5d5d5" stroke-width="7"/>
+                <path d="M205 130 L235 105 L300 110 L320 130 L270 145 L220 145Z"
+                      fill="#a7a7a7" stroke="#eee" stroke-width="3"/>
+                <path d="M235 105 L220 90 L270 90 L300 110"
+                      fill="none" stroke="#ccc" stroke-width="7"/>
+                <path d="M300 110 L345 100 L360 115"
+                      fill="none" stroke="#ddd" stroke-width="5"/>
+                <path d="M215 145 L195 165 L245 180 L275 160 L270 145Z"
+                      fill="#555" stroke="#aaa" stroke-width="3"/>
+                <path d="M190 95 L255 95" stroke="#aaa" stroke-width="5"/>
+                <text x="250" y="35" fill="#fff" font-size="17" text-anchor="middle" font-weight="bold">LOS PRIMEROS MODELOS</text>
+            </svg>
+
+            <div class="contenido">
+                <h3>1969: Honda CB750</h3>
+                <p>
+                    La Honda CB750 fue un hito en las motos
+                    de altas prestaciones. Su motor de cuatro
+                    cilindros y su freno de disco delantero
+                    contribuyeron a transformar la industria.
+                </p>
+                <a class="enlace"
+                   href="https://global.honda/en/heritage/episodes/1969cb750four.html"
+                   target="_blank" rel="noopener noreferrer">
+                    Leer historia de la CB750 →
+                </a>
+            </div>
+        </article>
+
+        <article class="tarjeta">
+
+            <!-- ILUSTRACIÓN SVG INTEGRADA -->
+            <svg class="imagen" viewBox="0 0 500 260"
+                 xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Ilustración de una moto deportiva roja">
+                <defs>
+                    <linearGradient id="fondo2" x2="0" y2="1">
+                        <stop stop-color="#382025"/>
+                        <stop offset="1" stop-color="#101010"/>
+                    </linearGradient>
+                </defs>
+                <rect width="500" height="260" fill="url(#fondo2)"/>
+                <circle cx="135" cy="190" r="47" fill="#090909" stroke="#aaa" stroke-width="5"/>
+                <circle cx="135" cy="190" r="10" fill="#aaa"/>
+                <circle cx="365" cy="190" r="47" fill="#090909" stroke="#aaa" stroke-width="5"/>
+                <circle cx="365" cy="190" r="10" fill="#aaa"/>
+                <path d="M135 190 L200 135 L275 190 L135 190 M200 135 L310 130 L365 190 M275 190 L310 130"
+                      fill="none" stroke="#bbb" stroke-width="7"/>
+                <path d="M195 140 L220 100 L310 105 L355 135 L300 160 L230 160Z"
+                      fill="#e50914" stroke="#ff7077" stroke-width="3"/>
+                <path d="M220 100 L245 80 L290 83 L310 105"
+                      fill="#222" stroke="#999" stroke-width="4"/>
+                <path d="M310 105 L350 92 L370 108"
+                      fill="none" stroke="#ddd" stroke-width="5"/>
+                <path d="M200 145 L180 165 L250 185 L280 160"
+                      fill="#333" stroke="#888" stroke-width="3"/>
+                <path d="M350 135 L380 125 L392 137"
+                      fill="none" stroke="#ddd" stroke-width="5"/>
+                <text x="250" y="35" fill="#fff" font-size="17" text-anchor="middle" font-weight="bold">POTENCIA Y DISEÑO</text>
+            </svg>
+
+            <div class="contenido">
+                <h3>Década de 1970</h3>
+                <p>
+                    Los fabricantes mejoraron motores,
+                    frenos y suspensiones. Las motocicletas
+                    de gran cilindrada adquirieron una
+                    presencia importante en la carretera
+                    y en las competiciones.
+                </p>
+            </div>
+        </article>
+
+        <article class="tarjeta">
+
+            <!-- ILUSTRACIÓN SVG INTEGRADA -->
+            <svg class="imagen" viewBox="0 0 500 260"
+                 xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Ilustración de una superbike moderna">
+                <defs>
+                    <linearGradient id="fondo3" x2="0" y2="1">
+                        <stop stop-color="#252b34"/>
+                        <stop offset="1" stop-color="#090909"/>
+                    </linearGradient>
+                </defs>
+                <rect width="500" height="260" fill="url(#fondo3)"/>
+                <circle cx="130" cy="190" r="48" fill="#050505" stroke="#aaa" stroke-width="6"/>
+                <circle cx="130" cy="190" r="12" fill="#aaa"/>
+                <circle cx="370" cy="190" r="48" fill="#050505" stroke="#aaa" stroke-width="6"/>
+                <circle cx="370" cy="190" r="12" fill="#aaa"/>
+                <path d="M130 190 L195 140 L280 190 L130 190 M195 140 L310 130 L370 190 M280 190 L310 130"
+                      fill="none" stroke="#aaa" stroke-width="7"/>
+                <path d="M185 145 L215 100 L300 100 L350 135 L310 155 L230 160Z"
+                      fill="#e50914" stroke="#ff5c65" stroke-width="4"/>
+                <path d="M215 100 L245 75 L295 80 L300 100Z"
+                      fill="#161616" stroke="#888" stroke-width="4"/>
+                <path d="M350 135 L380 110 L397 120"
+                      fill="none" stroke="#eee" stroke-width="5"/>
+                <path d="M220 160 L190 180 L250 187 L280 165Z"
+                      fill="#292929" stroke="#777" stroke-width="3"/>
+                <path d="M235 102 L270 105 L250 120Z" fill="#fff"/>
+                <text x="250" y="35" fill="#fff" font-size="17" text-anchor="middle" font-weight="bold">TECNOLOGÍA MODERNA</text>
+            </svg>
+
+            <div class="contenido">
+                <h3>La era moderna</h3>
+                <p>
+                    La electrónica, los materiales avanzados,
+                    los sistemas de frenado y las ayudas
+                    de conducción llevaron las deportivas
+                    a un nuevo nivel tecnológico.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="fondo" id="evolucion">
+    <h2 class="titulo">
+        Evolución a través del <span class="rojo">tiempo</span>
+    </h2>
+
+    <p class="intro">
+        Cada generación incorporó avances que transformaron
+        la potencia, el control y la seguridad.
+    </p>
+
+    <div class="epoca">
+        <h3>1960–1970 | Nacen las grandes deportivas</h3>
+        <p>
+            La Honda CB750 de 1969 se convirtió en una
+            referencia por su motor de cuatro cilindros
+            y sus innovaciones técnicas.
+        </p>
+    </div>
+
+    <div class="epoca">
+        <h3>1980 | La influencia de las carreras</h3>
+        <p>
+            Se extendieron los carenados integrales,
+            los motores de alto rendimiento y las
+            suspensiones más avanzadas.
+        </p>
+    </div>
+
+    <div class="epoca">
+        <h3>1990 | La revolución deportiva</h3>
+        <p>
+            La Honda CBR900RR, presentada en 1992,
+            destacó por su diseño compacto y ligero,
+            que influyó en las superbikes posteriores.
+        </p>
+    </div>
+
+    <div class="epoca">
+        <h3>2000 | Potencia y electrónica</h3>
+        <p>
+            Las mejoras de chasis, frenos y gestión
+            electrónica aumentaron el rendimiento
+            y el control de las motocicletas.
+        </p>
+    </div>
+
+    <div class="epoca">
+        <h3>2010–Actualidad | Innovación</h3>
+        <p>
+            Muchas deportivas actuales incorporan
+            control de tracción, ABS en curva y modos
+            de conducción, dependiendo del modelo.
+        </p>
+    </div>
+</section>
+
+<section id="modelos">
+    <h2 class="titulo">
+        Modelos que hicieron <span class="rojo">historia</span>
+    </h2>
+
+    <div class="tarjetas">
+
+        <article class="tarjeta">
+            <svg class="imagen" viewBox="0 0 500 260"
+                 xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Ilustración deportiva Honda">
+                <rect width="500" height="260" fill="#191919"/>
+                <circle cx="130" cy="190" r="45" fill="#080808" stroke="#bbb" stroke-width="5"/>
+                <circle cx="360" cy="190" r="45" fill="#080808" stroke="#bbb" stroke-width="5"/>
+                <path d="M130 190 L200 140 L270 190 L130 190 M200 140 L310 130 L360 190"
+                      fill="none" stroke="#bbb" stroke-width="7"/>
+                <path d="M195 145 L220 100 L310 105 L350 135 L300 160 L220 160Z"
+                      fill="#d71920" stroke="#fff" stroke-width="3"/>
+                <path d="M220 100 L245 80 L290 85 L310 105"
+                      fill="#111" stroke="#aaa" stroke-width="4"/>
+                <text x="250" y="35" text-anchor="middle" fill="white" font-size="20" font-weight="bold">CBR / FIREBLADE</text>
+            </svg>
+            <div class="contenido">
+                <h3>Honda CBR</h3>
+                <p>
+                    La familia CBR incluye modelos que han
+                    combinado tecnología deportiva con
+                    distintas generaciones de motores.
+                </p>
+                <a class="enlace" href="https://global.honda/en/CBR/history/"
+                   target="_blank" rel="noopener noreferrer">
+                    Historia oficial de CBR →
+                </a>
+            </div>
+        </article>
+
+        <article class="tarjeta">
+            <svg class="imagen" viewBox="0 0 500 260"
+                 xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Ilustración de moto deportiva Yamaha">
+                <rect width="500" height="260" fill="#161b24"/>
+                <circle cx="130" cy="190" r="45" fill="#080808" stroke="#bbb" stroke-width="5"/>
+                <circle cx="360" cy="190" r="45" fill="#080808" stroke="#bbb" stroke-width="5"/>
+                <path d="M130 190 L200 140 L270 190 L130 190 M200 140 L310 130 L360 190"
+                      fill="none" stroke="#bbb" stroke-width="7"/>
+                <path d="M195 145 L220 100 L310 105 L350 135 L300 160 L220 160Z"
+                      fill="#1674d1" stroke="#d9e8ff" stroke-width="3"/>
+                <path d="M220 100 L245 80 L290 85 L310 105"
+                      fill="#111" stroke="#aaa" stroke-width="4"/>
+                <text x="250" y="35" text-anchor="middle" fill="white" font-size="20" font-weight="bold">YZF-R1</text>
+            </svg>
+            <div class="contenido">
+                <h3>Yamaha YZF-R1</h3>
+                <p>
+                    Presentada en 1998, destacó por su
+                    diseño compacto y orientación
+                    hacia el alto rendimiento.
+                </p>
+                <a class="enlace" href="https://www.yamaha-motor.eu/"
+                   target="_blank" rel="noopener noreferrer">
+                    Web oficial de Yamaha →
+                </a>
+            </div>
+        </article>
+
+        <article class="tarjeta">
+            <svg class="imagen" viewBox="0 0 500 260"
+                 xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Ilustración de moto deportiva Kawasaki">
+                <rect width="500" height="260" fill="#142218"/>
+                <circle cx="130" cy="190" r="45" fill="#080808" stroke="#bbb" stroke-width="5"/>
+                <circle cx="360" cy="190" r="45" fill="#080808" stroke="#bbb" stroke-width="5"/>
+                <path d="M130 190 L200 140 L270 190 L130 190 M200 140 L310 130 L360 190"
+                      fill="none" stroke="#bbb" stroke-width="7"/>
+                <path d="M195 145 L220 100 L310 105 L350 135 L300 160 L220 160Z"
+                      fill="#39a847" stroke="#d6ffd9" stroke-width="3"/>
+                <path d="M220 100 L245 80 L290 85 L310 105"
+                      fill="#111" stroke="#aaa" stroke-width="4"/>
+                <text x="250" y="35" text-anchor="middle" fill="white" font-size="20" font-weight="bold">NINJA</text>
+            </svg>
+            <div class="contenido">
+                <h3>Kawasaki Ninja</h3>
+                <p>
+                    Su familia deportiva abarca diferentes
+                    cilindradas y generaciones, incluyendo
+                    modelos de alto rendimiento.
+                </p>
+                <a class="enlace" href="https://www.kawasaki.eu/"
+                   target="_blank" rel="noopener noreferrer">
+                    Web oficial de Kawasaki →
+                </a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="fondo" id="marcas">
+    <h2 class="titulo">
+        Marcas de <span class="rojo">superbikes</span>
+    </h2>
+
+    <p class="intro">
+        Fabricantes reconocidos por su contribución
+        a la historia del motociclismo deportivo.
+    </p>
+
+    <div class="marcas">
+        <div class="marca">HONDA</div>
+        <div class="marca">YAMAHA</div>
+        <div class="marca">KAWASAKI</div>
+        <div class="marca">SUZUKI</div>
+        <div class="marca">DUCATI</div>
+        <div class="marca">BMW MOTORRAD</div>
+        <div class="marca">APRILIA</div>
+    </div>
+</section>
+
+<section id="fuentes">
+    <h2 class="titulo">
+        Fuentes de <span class="rojo">consulta</span>
+    </h2>
+
+    <p class="intro">
+        Consulta estas páginas para conocer más
+        sobre los modelos y su historia.
+    </p>
+
+    <p class="intro">
+        <a class="enlace"
+           href="https://global.honda/en/heritage/episodes/1969cb750four.html"
+           target="_blank" rel="noopener noreferrer">
+           Historia de la Honda CB750
+        </a><br>
+
+        <a class="enlace"
+           href="https://global.honda/en/CBR/history/"
+           target="_blank" rel="noopener noreferrer">
+           Historia de Honda CBR
+        </a><br>
+
+        <a class="enlace"
+           href="https://www.yamaha-motor.eu/"
+           target="_blank" rel="noopener noreferrer">
+           Sitio oficial de Yamaha
+        </a><br>
+
+        <a class="enlace"
+           href="https://www.kawasaki.eu/"
+           target="_blank" rel="noopener noreferrer">
+           Sitio oficial de Kawasaki
+        </a>
+    </p>
+</section>
+
+<section>
+    <h2 class="titulo">
+        Pasión por la <span class="rojo">ingeniería</span>
+    </h2>
+
+    <p class="cierre">
+        Las motocicletas deportivas de alta cilindrada
+        representan décadas de innovación en motores,
+        aerodinámica, materiales y electrónica.
+        Su historia continúa evolucionando con nuevas
+        tecnologías y diseños. La conducción responsable
+        y el respeto a las normas de tránsito son
+        esenciales para la seguridad.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 MOTOSPORT | Historia de las motos deportivas</p>
+</footer>
+
+</body>
+</html>
+
+
+<body>
+</body>
+</html>
